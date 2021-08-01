@@ -1,0 +1,125 @@
+<style>
+  body{
+    background-image: url("/images/background.jpg");
+  }
+  #copyright{
+            text-align: center;
+            color: lime;
+            background-color: black;
+            width: 100%;
+            left: 0;
+            right: 0;
+            margin-bottom: 0px;
+            position: fixed;
+            bottom: 0;
+            height: 3%
+  }
+  #copyright a {
+          text-decoration: none;
+          color: lime;
+  }
+  #copyright a:hover {
+          text-decoration: underline;
+  }
+  #profileIMGnName {
+    position: fixed;
+    margin-top: 10%;
+    background-color: lime;
+    color: black;
+    width: 30%;
+    text-align: center;
+    height: 50%;
+    margin-bottom: 30%;
+    margin-left: 3%;
+    padding: 1% 1% 1% 1%;
+  }
+  #head{
+            text-align: center;
+            color: lime;
+            background-color: black;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            position: fixed;
+            height: 10%;
+    }
+    #head a{
+            text-decoration: none;
+            color: lime;
+    }
+    #head a:hover{
+            text-decoration: underline;
+            color:lime;
+    }
+    #blogs {
+        text-align: center;
+        color: lime;
+        background-color: black;
+        position: fixed;
+        margin-left: 40%;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        text-align: center;
+        margin-right: 3%;
+        width: 60%;
+    }
+    .postType{
+          border: 1px solid white;
+          margin-top: 1%; 
+          margin-bottom: 1%;
+          margin-left: 3%;
+          margin-right: 3%;
+    }
+</style>
+<script src="/js/index.js"></script>
+<link rel="stylesheet" href="/css/index.css">
+<script>
+function openMenu () {
+    document.getElementById("openMenu").style.display = "none";
+    document.getElementById("content").style.display = "none";
+    document.getElementById("menu").style.display = "block";
+}
+function menuClose () {
+    document.getElementById("openMenu").style.display = "block";
+    document.getElementById("content").style.display = "block";
+    document.getElementById("menu").style.display = "none";
+}
+</script>
+<body>
+    <div id="menu" hidden>
+        <div id="menuClose" onclick="menuClose()">
+            Close
+        </div>
+        <div id="menuContent">
+            <a href="/login.html">Login</a><br>
+            <a href="/signup.html">Sign Up</a><br>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    <div id="openMenu" onclick="openMenu()">M<br>E<br>N<br>U</div>
+    <h1 id=head>
+        <a href="/">Hacker's Blog</a>
+    </h1>
+  <div id=content>
+  <div id="profileIMGnName">
+    <img src="/images/profile.jpg" style="width: 50%;border-radius: 50%;"><br><br>
+    <b>Hacker</b><br>
+    <b>Experience</b>: Web, Android, iOS, Executive, Network
+  </div>
+  <div id="blogs">
+  <h4>
+    Posts
+  </h4>
+  <div class="postType">
+        <b>What is Social Engineering?</b><br>Social Engineering is the art of server hacking via human hacking!
+  </div>
+  <div class="postType">
+        <b>Bounty writeup, Earth hacked</b><br>Just kidding. Earth isn't a server
+  </div>
+  </div>
+  </div>
+  <div id="copyright">
+    &copy; Hacker's Blog. Images from <a href="https://unsplash.com">Unsplash</a>
+  </div>
+</body>

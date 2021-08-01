@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Blog</title>
+    <style>
+        body{
+            background-image: url("/images/background.jpg");
+        }
+        #head{
+            text-align: center;
+            color: lime;
+            background-color: black;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            position: fixed;
+            height: 10%;
+        }
+        #popularPosts{
+            text-align: center;
+            color: cyan;
+            width: 100%;
+            top: 20%;
+            position: fixed;
+        }
+        #copyright{
+            text-align: center;
+            color: lime;
+            background-color: black;
+            width: 100%;
+            left: 0;
+            right: 0;
+            margin-bottom: 0px;
+            position: fixed;
+            bottom: 0;
+        }
+        .postType{
+          border: 1px solid white;
+          margin-top: 1%; 
+          margin-bottom: 1%;
+          margin-left: 3%;
+          margin-right: 3%;
+        }
+        #copyright a {
+          text-decoration: none;
+          color: lime;
+        }
+        #copyright a:hover {
+          text-decoration: underline;
+        }
+        .postType a {
+          color: blue;
+          text-decoration: none;
+        }
+        .postType a:hover {
+          color: blue;
+          text-decoration: underline;
+        }
+        #head a{
+            text-decoration: none;
+            color: lime;
+    }
+    #head a:hover{
+            text-decoration: underline;
+            color:lime;
+    }
+    </style>
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <h1 id=head>
+        <a href="/">Hacker's Blog</a>
+    </h1>
+    <div id="menu" hidden>
+        <div id="menuClose" onclick="menuClose()">
+            Close
+        </div>
+        <div id="menuContent">
+            <a href="/login.html">Login</a><br>
+            <a href="/signup.html">Sign Up</a><br>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    <div id="openMenu" onclick="openMenu()">M<br>E<br>N<br>U</div>
+    <div id="content">
+    <div id="popularPosts">
+      <div class="postType">
+        <b>What is Social Engineering? - <a href="/profiles/hacker.html">Hacker</a></b><br>Social Engineering is the art of server hacking via human hacking!
+      </div>
+      <div class="postType">
+        <b>Bounty writeup, Earth hacked - <a href="/profiles/hacker.html">Hacker</a></b><br>Just kidding. Earth isn't a server
+      </div>
+    </div>
+    </div>
+    <div id="copyright">
+      &copy; Hacker's Blog. Images from <a href="https://unsplash.com">Unsplash</a>
+    </div>
+</body>
+</html>
